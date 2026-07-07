@@ -1,195 +1,263 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grooming Salon</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
+<title>AFNV Grooming</title>
 
-body{
-    background:#f8f8f8;
-    color:#333;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-header{
-    background:#4CAF50;
-    color:white;
-    padding:20px;
-    position:sticky;
-    top:0;
-}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-header h1{
-    text-align:center;
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-nav{
-    margin-top:15px;
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    flex-wrap:wrap;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-section{
-    max-width:1100px;
-    margin:auto;
-    padding:60px 20px;
-}
-
-.hero{
-    text-align:center;
-}
-
-.hero h2{
-    font-size:42px;
-    margin-bottom:20px;
-}
-
-.hero p{
-    font-size:20px;
-    color:#666;
-}
-
-.btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 30px;
-    background:#4CAF50;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:white;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.photo{
-    height:220px;
-    border:2px dashed #bbb;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:white;
-    border-radius:10px;
-}
-
-.contact{
-    display:grid;
-    gap:15px;
-}
-
-.socials{
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-}
-
-.socials a{
-    background:#4CAF50;
-    color:white;
-    padding:12px 20px;
-    text-decoration:none;
-    border-radius:8px;
-}
-
-footer{
-    margin-top:50px;
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
 <header>
 
-<h1>Название груминг салона</h1>
+<div class="container">
+
+<div class="logo">
+
+🐾 AFNV Grooming
+
+</div>
 
 <nav>
+
+<a href="#about">О нас</a>
+
+<a href="#services">Услуги</a>
+
 <a href="#price">Прайс</a>
-<a href="#gallery">Стрижки</a>
+
+<a href="#gallery">Галерея</a>
+
 <a href="#contacts">Контакты</a>
+
 </nav>
+
+</div>
 
 </header>
 
 <section class="hero">
 
-<h2>Добро пожаловать!</h2>
+<div class="hero-left">
+
+<span class="small">Премиальный груминг</span>
+
+<h1>
+
+Красота и забота
+для каждого питомца
+
+</h1>
 
 <p>
-Здесь можно разместить описание вашего салона.
+
+Профессиональный уход, стрижки и SPA-процедуры.
+
 </p>
 
-<a class="btn" href="#contacts">
+<a href="#contacts" class="button">
+
 Записаться
+
 </a>
+
+</div>
+
+<div class="hero-right">
+
+<div class="circle">
+
+<img src="assets/hero.jpg" alt="">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<h2>
+
+О нашем салоне
+
+</h2>
+
+<p>
+
+Здесь будет информация о вашем салоне.
+
+</p>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<div class="container">
+
+<h2>
+
+Наши услуги
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<div class="icon">
+
+✂️
+
+</div>
+
+<h3>
+
+Стрижка
+
+</h3>
+
+<p>
+
+Описание услуги
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+
+🛁
+
+</div>
+
+<h3>
+
+Купание
+
+</h3>
+
+<p>
+
+Описание услуги
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+
+🪮
+
+</div>
+
+<h3>
+
+Экспресс уход
+
+</h3>
+
+<p>
+
+Описание услуги
+
+</p>
+
+</div>
+
+<div class="card">
+
+<div class="icon">
+
+🐶
+
+</div>
+
+<h3>
+
+Комплекс
+
+</h3>
+
+<p>
+
+Описание услуги
+
+</p>
+
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 <section id="price">
 
-<h2>Прайс-лист</h2>
+<div class="container">
 
-<br>
+<h2>
 
-<div class="cards">
+Прайс
 
-<div class="card">
+</h2>
+
+<div class="price-grid">
+
+<div class="price-card">
+
 <h3>Услуга</h3>
-<p>Описание</p>
-<h2>Цена</h2>
+
+<span>Цена</span>
+
 </div>
 
-<div class="card">
+<div class="price-card">
+
 <h3>Услуга</h3>
-<p>Описание</p>
-<h2>Цена</h2>
+
+<span>Цена</span>
+
 </div>
 
-<div class="card">
+<div class="price-card">
+
 <h3>Услуга</h3>
-<p>Описание</p>
-<h2>Цена</h2>
+
+<span>Цена</span>
+
 </div>
 
-<div class="card">
+<div class="price-card">
+
 <h3>Услуга</h3>
-<p>Описание</p>
-<h2>Цена</h2>
+
+<span>Цена</span>
+
+</div>
+
 </div>
 
 </div>
@@ -198,34 +266,28 @@ footer{
 
 <section id="gallery">
 
-<h2>Примеры стрижек</h2>
+<div class="container">
 
-<br>
+<h2>
+
+Наши работы
+
+</h2>
 
 <div class="gallery">
 
-<div class="photo">
-Фото 1
-</div>
+<img src="assets/gallery/1.jpg">
 
-<div class="photo">
-Фото 2
-</div>
+<img src="assets/gallery/2.jpg">
 
-<div class="photo">
-Фото 3
-</div>
+<img src="assets/gallery/3.jpg">
 
-<div class="photo">
-Фото 4
-</div>
+<img src="assets/gallery/4.jpg">
 
-<div class="photo">
-Фото 5
-</div>
+<img src="assets/gallery/5.jpg">
 
-<div class="photo">
-Фото 6
+<img src="assets/gallery/6.jpg">
+
 </div>
 
 </div>
@@ -234,29 +296,25 @@ footer{
 
 <section id="contacts">
 
-<h2>Контакты</h2>
+<div class="container">
 
-<br>
+<h2>
 
-<div class="contact">
+Контакты
 
-<p><strong>Адрес:</strong> ______________________</p>
+</h2>
 
-<p><strong>Телефон:</strong> ______________________</p>
+<div class="contact-box">
 
-<p><strong>Email:</strong> ______________________</p>
+<p>📍 Адрес</p>
 
-<p><strong>Время работы:</strong> ______________________</p>
+<p>📞 Телефон</p>
 
-</div>
+<p>🕘 Время работы</p>
 
-<br>
+<p>📧 Email</p>
 
-<h2>Социальные сети</h2>
-
-<br>
-
-<div class="socials">
+<div class="social">
 
 <a href="#">Instagram</a>
 
@@ -264,7 +322,9 @@ footer{
 
 <a href="#">WhatsApp</a>
 
-<a href="#">VK</a>
+</div>
+
+</div>
 
 </div>
 
@@ -272,9 +332,12 @@ footer{
 
 <footer>
 
-© 2026 Ваш груминг салон
+AFNV Grooming © 2026
 
 </footer>
 
+<script src="script.js"></script>
+
 </body>
+
 </html>
