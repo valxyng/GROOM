@@ -7,6 +7,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<meta name="description" content="AFNV Grooming - премиальный груминг-салон для вашего питомца. Профессиональный уход, стрижки и SPA-процедуры.">
+
 <title>AFNV Grooming</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,24 +28,22 @@
 <div class="container">
 
 <div class="logo">
-
 🐾 AFNV Grooming
-
 </div>
 
-<nav>
-
+<nav role="navigation" aria-label="Основная навигация">
 <a href="#about">О нас</a>
-
 <a href="#services">Услуги</a>
-
 <a href="#price">Прайс</a>
-
 <a href="#gallery">Галерея</a>
-
 <a href="#contacts">Контакты</a>
-
 </nav>
+
+<button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+<span></span>
+<span></span>
+<span></span>
+</button>
 
 </div>
 
@@ -52,38 +52,16 @@
 <section class="hero">
 
 <div class="hero-left">
-
 <span class="small">Премиальный груминг</span>
-
-<h1>
-
-Красота и забота
-для каждого питомца
-
-</h1>
-
-<p>
-
-Профессиональный уход, стрижки и SPA-процедуры.
-
-</p>
-
-<a href="#contacts" class="button">
-
-Записаться
-
-</a>
-
+<h1>Красота и забота для каждого питомца</h1>
+<p>Профессиональный уход, стрижки и SPA-процедуры для вашего любимца.</p>
+<a href="#contacts" class="button">Записаться</a>
 </div>
 
 <div class="hero-right">
-
 <div class="circle">
-
-<img src="assets/hero.jpg" alt="">
-
+<img src="assets/hero.jpg" alt="Груминг питомца">
 </div>
-
 </div>
 
 </section>
@@ -91,19 +69,8 @@
 <section id="about">
 
 <div class="container">
-
-<h2>
-
-О нашем салоне
-
-</h2>
-
-<p>
-
-Здесь будет информация о вашем салоне.
-
-</p>
-
+<h2>О нашем салоне</h2>
+<p>Здесь будет информация о вашем салоне. AFNV Grooming - это место, где каждый питомец получает максимум внимания и заботы. Наша команда профессионалов готова сделать вашего друга еще красивее и здоровее.</p>
 </div>
 
 </section>
@@ -111,105 +78,34 @@
 <section id="services">
 
 <div class="container">
-
-<h2>
-
-Наши услуги
-
-</h2>
-
+<h2>Наши услуги</h2>
 <div class="cards">
 
 <div class="card">
-
-<div class="icon">
-
-✂️
-
-</div>
-
-<h3>
-
-Стрижка
-
-</h3>
-
-<p>
-
-Описание услуги
-
-</p>
-
+<div class="icon">✂️</div>
+<h3>Стрижка</h3>
+<p>Профессиональная стрижка под любой стиль вашего питомца. Опытные мастера подберут идеальный вариант.</p>
 </div>
 
 <div class="card">
-
-<div class="icon">
-
-🛁
-
-</div>
-
-<h3>
-
-Купание
-
-</h3>
-
-<p>
-
-Описание услуги
-
-</p>
-
+<div class="icon">🛁</div>
+<h3>Купание</h3>
+<p>Щадящее мытье с использованием премиум-шампуней и кондиционеров для здоровья шерсти.</p>
 </div>
 
 <div class="card">
-
-<div class="icon">
-
-🪮
-
-</div>
-
-<h3>
-
-Экспресс уход
-
-</h3>
-
-<p>
-
-Описание услуги
-
-</p>
-
+<div class="icon">🪮</div>
+<h3>Экспресс уход</h3>
+<p>Быстрое приведение в порядок между полными процедурами. Идеально для спешащих клиентов.</p>
 </div>
 
 <div class="card">
-
-<div class="icon">
-
-🐶
-
-</div>
-
-<h3>
-
-Комплекс
-
-</h3>
-
-<p>
-
-Описание услуги
-
-</p>
-
+<div class="icon">🐶</div>
+<h3>Комплекс</h3>
+<p>Полный комплекс услуг: мытье, стрижка, чистка ушей и стрижка когтей в одном пакете.</p>
 </div>
 
 </div>
-
 </div>
 
 </section>
@@ -217,49 +113,51 @@
 <section id="price">
 
 <div class="container">
-
-<h2>
-
-Прайс
-
-</h2>
+<h2>Прайс</h2>
 
 <div class="price-grid">
 
 <div class="price-card">
-
-<h3>Услуга</h3>
-
-<span>Цена</span>
-
+<h3>Стрижка</h3>
+<div class="price-range">от 1500 ₽</div>
 </div>
 
 <div class="price-card">
-
-<h3>Услуга</h3>
-
-<span>Цена</span>
-
+<h3>Купание</h3>
+<div class="price-range">от 1000 ₽</div>
 </div>
 
 <div class="price-card">
-
-<h3>Услуга</h3>
-
-<span>Цена</span>
-
+<h3>Экспресс уход</h3>
+<div class="price-range">от 800 ₽</div>
 </div>
 
 <div class="price-card">
+<h3>Комплекс</h3>
+<div class="price-range">от 2500 ₽</div>
+</div>
 
-<h3>Услуга</h3>
+<div class="price-card">
+<h3>Чистка ушей</h3>
+<div class="price-range">от 500 ₽</div>
+</div>
 
-<span>Цена</span>
+<div class="price-card">
+<h3>Стрижка когтей</h3>
+<div class="price-range">от 300 ₽</div>
+</div>
 
+<div class="price-card">
+<h3>SPA-процедуры</h3>
+<div class="price-range">от 2000 ₽</div>
+</div>
+
+<div class="price-card">
+<h3>Гигиеническая стрижка</h3>
+<div class="price-range">от 600 ₽</div>
 </div>
 
 </div>
-
 </div>
 
 </section>
@@ -267,29 +165,15 @@
 <section id="gallery">
 
 <div class="container">
-
-<h2>
-
-Наши работы
-
-</h2>
-
+<h2>Наши работы</h2>
 <div class="gallery">
-
-<img src="assets/gallery/1.jpg">
-
-<img src="assets/gallery/2.jpg">
-
-<img src="assets/gallery/3.jpg">
-
-<img src="assets/gallery/4.jpg">
-
-<img src="assets/gallery/5.jpg">
-
-<img src="assets/gallery/6.jpg">
-
+<img src="assets/gallery/1.jpg" alt="Красивая стрижка питомца 1">
+<img src="assets/gallery/2.jpg" alt="Красивая стрижка питомца 2">
+<img src="assets/gallery/3.jpg" alt="Красивая стрижка питомца 3">
+<img src="assets/gallery/4.jpg" alt="Красивая стрижка питомца 4">
+<img src="assets/gallery/5.jpg" alt="Красивая стрижка питомца 5">
+<img src="assets/gallery/6.jpg" alt="Красивая стрижка питомца 6">
 </div>
-
 </div>
 
 </section>
@@ -297,61 +181,40 @@
 <section id="contacts">
 
 <div class="container">
-
-<h2>
-
-Контакты
-
-</h2>
-
+<h2>Контакты</h2>
 <div class="contact-box">
-
-<p>📍 Адрес</p>
-
-<p>📞 Телефон</p>
-
-<p>🕘 Время работы</p>
-
-<p>📧 Email</p>
-
+<p>📍 <strong>Адрес:</strong> ул. Примерная, 123, Москва</p>
+<p>📞 <strong>Телефон:</strong> +7 (999) 123-45-67</p>
+<p>🕘 <strong>Время работы:</strong> Пн-Пт 10:00-19:00, Сб-Вс 10:00-18:00</p>
+<p>📧 <strong>Email:</strong> info@afnvgrooming.ru</p>
 <div class="social">
-
-<a href="#">Instagram</a>
-
-<a href="#">Telegram</a>
-
-<a href="#">WhatsApp</a>
-
+<a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Наш Instagram">Instagram</a>
+<a href="https://t.me" target="_blank" rel="noopener noreferrer" aria-label="Наш Telegram">Telegram</a>
+<a href="https://wa.me/79991234567" target="_blank" rel="noopener noreferrer" aria-label="Напишите нам в WhatsApp">WhatsApp</a>
 </div>
-
 </div>
-
 </div>
 
 </section>
 
-<div class="mobile-menu" id="mobileMenu">
-
+<div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Мобильное меню">
 <a href="#about">О нас</a>
-
 <a href="#services">Услуги</a>
-
 <a href="#price">Прайс</a>
-
 <a href="#gallery">Галерея</a>
-
 <a href="#contacts">Контакты</a>
+<a class="mobile-btn" href="#contacts">Записаться</a>
+</div>
 
-<a class="mobile-btn" href="#contacts">
-Записаться
-</a>
-
+<div class="bottom-bar" id="bottomBar" aria-label="Быстрая навигация">
+<a href="#services" aria-label="Услуги">🔧</a>
+<a href="#price" aria-label="Прайс">💰</a>
+<a href="#gallery" aria-label="Галерея">📸</a>
+<a href="#contacts" aria-label="Контакты">☎️</a>
 </div>
 
 <footer>
-
-AFNV Grooming © 2026
-
+AFNV Grooming © 2026 | Премиальный груминг для вашего питомца
 </footer>
 
 <script src="script.js"></script>
