@@ -381,6 +381,74 @@ section p{
 
 /* ================== PRICE SECTION ================== */
 
+.price-section {
+    margin-bottom: 60px;
+}
+
+.breed-title {
+    font-size: 24px;
+    color: var(--accent);
+    margin-bottom: 30px;
+    text-align: left;
+    font-weight: 600;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--accent2);
+}
+
+.price-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.price-item {
+    background: var(--card);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: var(--shadow-light);
+    transition: .3s;
+    border-left: 4px solid var(--accent);
+}
+
+.price-item:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+
+.service-name {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.service-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.detail-row span:first-child {
+    color: var(--gray);
+    font-size: 14px;
+    flex: 1;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--accent);
+    white-space: nowrap;
+}
+
 .price-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
@@ -647,8 +715,18 @@ footer{
     }
     
     /* Price */
-    .price-grid{
-        grid-template-columns:repeat(2, 1fr);
+    .detail-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .breed-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .price-item {
+        padding: 15px;
     }
     
     /* Gallery */
@@ -699,8 +777,20 @@ footer{
         height:200px;
     }
     
-    .price-grid {
-        grid-template-columns:1fr;
+    .price-item {
+        padding: 12px;
+    }
+    
+    .service-name {
+        font-size: 16px;
+    }
+    
+    .price {
+        font-size: 16px;
+    }
+    
+    .breed-title {
+        font-size: 18px;
     }
     
     .contact-box {
