@@ -126,3 +126,22 @@ button.addEventListener("mouseleave",()=>{
     button.style.transform="scale(1)";
 
 });
+const burger=document.getElementById("burger");
+
+const mobile=document.getElementById("mobileMenu");
+
+burger.onclick=()=>{
+
+mobile.classList.toggle("active");
+
+}
+
+document.querySelectorAll(".mobile-menu a").forEach(link=>{
+
+link.onclick=()=>{
+
+mobile.classList.remove("active");
+
+}
+
+});
