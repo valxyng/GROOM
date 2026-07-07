@@ -1,1 +1,474 @@
+/* ===========================
+   AFNV Grooming
+   style.css
+=========================== */
 
+:root{
+    --bg:#FFF8F5;
+    --bg2:#FDEBE3;
+    --card:#FFFFFF;
+    --accent:#F48A5D;
+    --accent2:#FFD7C2;
+    --text:#2C2725;
+    --gray:#7A6F69;
+    --shadow:0 15px 35px rgba(0,0,0,.08);
+    --radius:30px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+/* декоративные круги */
+body::before{
+    content:"";
+    position:fixed;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    background:#FFE7DA;
+    top:-180px;
+    right:-150px;
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    background:#FFF0E8;
+    bottom:-150px;
+    left:-120px;
+    z-index:-2;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ---------------- HEADER ---------------- */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    backdrop-filter:blur(12px);
+    background:rgba(255,248,245,.8);
+    z-index:999;
+    border-bottom:1px solid rgba(0,0,0,.05);
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 0;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:700;
+    color:var(--accent);
+}
+
+nav{
+    display:flex;
+    gap:35px;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:var(--accent);
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding-top:120px;
+}
+
+.hero-left{
+    width:50%;
+}
+
+.small{
+    display:inline-block;
+    background:var(--accent2);
+    color:var(--accent);
+    padding:10px 20px;
+    border-radius:50px;
+    margin-bottom:25px;
+    font-weight:600;
+}
+
+.hero h1{
+    font-size:64px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.hero p{
+    color:var(--gray);
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:35px;
+}
+
+.button{
+    display:inline-block;
+    padding:18px 40px;
+    border-radius:50px;
+    text-decoration:none;
+    color:white;
+    background:var(--accent);
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 15px 30px rgba(244,138,93,.35);
+}
+
+.button:hover{
+    transform:translateY(-5px);
+}
+
+.hero-right{
+    width:45%;
+    display:flex;
+    justify-content:center;
+}
+
+.circle{
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#FFE7DA,#FFF7F3);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:var(--shadow);
+    overflow:hidden;
+}
+
+.circle img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ---------------- СЕКЦИИ ---------------- */
+
+section{
+    padding:100px 0;
+}
+
+h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:60px;
+}
+
+section p{
+    text-align:center;
+    color:var(--gray);
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* ---------------- КАРТОЧКИ ---------------- */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:var(--card);
+    border-radius:30px;
+    padding:40px;
+    text-align:center;
+    transition:.35s;
+    box-shadow:var(--shadow);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.icon{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:15px;
+}
+/* ===========================
+   AFNV Grooming
+   style.css
+=========================== */
+
+:root{
+    --bg:#FFF8F5;
+    --bg2:#FDEBE3;
+    --card:#FFFFFF;
+    --accent:#F48A5D;
+    --accent2:#FFD7C2;
+    --text:#2C2725;
+    --gray:#7A6F69;
+    --shadow:0 15px 35px rgba(0,0,0,.08);
+    --radius:30px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+/* декоративные круги */
+body::before{
+    content:"";
+    position:fixed;
+    width:450px;
+    height:450px;
+    border-radius:50%;
+    background:#FFE7DA;
+    top:-180px;
+    right:-150px;
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    background:#FFF0E8;
+    bottom:-150px;
+    left:-120px;
+    z-index:-2;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* ---------------- HEADER ---------------- */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    backdrop-filter:blur(12px);
+    background:rgba(255,248,245,.8);
+    z-index:999;
+    border-bottom:1px solid rgba(0,0,0,.05);
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:22px 0;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:700;
+    color:var(--accent);
+}
+
+nav{
+    display:flex;
+    gap:35px;
+}
+
+nav a{
+    text-decoration:none;
+    color:var(--text);
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:var(--accent);
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding-top:120px;
+}
+
+.hero-left{
+    width:50%;
+}
+
+.small{
+    display:inline-block;
+    background:var(--accent2);
+    color:var(--accent);
+    padding:10px 20px;
+    border-radius:50px;
+    margin-bottom:25px;
+    font-weight:600;
+}
+
+.hero h1{
+    font-size:64px;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.hero p{
+    color:var(--gray);
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:35px;
+}
+
+.button{
+    display:inline-block;
+    padding:18px 40px;
+    border-radius:50px;
+    text-decoration:none;
+    color:white;
+    background:var(--accent);
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 15px 30px rgba(244,138,93,.35);
+}
+
+.button:hover{
+    transform:translateY(-5px);
+}
+
+.hero-right{
+    width:45%;
+    display:flex;
+    justify-content:center;
+}
+
+.circle{
+    width:500px;
+    height:500px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#FFE7DA,#FFF7F3);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:var(--shadow);
+    overflow:hidden;
+}
+
+.circle img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ---------------- СЕКЦИИ ---------------- */
+
+section{
+    padding:100px 0;
+}
+
+h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:60px;
+}
+
+section p{
+    text-align:center;
+    color:var(--gray);
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* ---------------- КАРТОЧКИ ---------------- */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:var(--card);
+    border-radius:30px;
+    padding:40px;
+    text-align:center;
+    transition:.35s;
+    box-shadow:var(--shadow);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.icon{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+.card p{
+    font-size:15px;
+}
